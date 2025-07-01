@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard Admin</title>
+    <!-- Tailwind CSS CDN (atau dari build kamu) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex h-screen overflow-hidden font-sans">
+
+  <!-- Sidebar -->
+  <aside class="bg-white w-64 flex flex-col shadow-lg">
+      <div class="flex items-center justify-center h-16 border-b border-gray-200">
+          <h1 class="text-2xl font-bold text-[#0A2E6E]">Pacu App</h1>
+      </div>
+
+      <nav class="flex flex-col flex-grow px-4 py-6 space-y-2 overflow-y-auto">
+
+          
+          
+      </nav>
+
+      <div class="px-4 py-6 border-t border-gray-200">
+          <form method="POST" action="http://localhost/logout">
+              <input type="hidden" name="_token" value="" autocomplete="off">              <button type="submit" class="w-full text-left text-red-600 font-semibold hover:text-red-800">Logout</button>
+          </form>
+      </div>
+  </aside>
+
+    
+    <main class="flex-grow overflow-auto p-8">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+    <h1 class="text-3xl font-semibold mb-8 text-gray-900">Dashboard Admin</h1>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+            <p class="text-sm font-medium text-gray-500">Total Toko</p>
+            <p class="text-4xl font-bold text-green-600">8</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+            <p class="text-sm font-medium text-gray-500">Total Users</p>
+            <p class="text-4xl font-bold text-green-600">5</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+            <p class="text-sm font-medium text-gray-500">Total Roles</p>
+            <p class="text-4xl font-bold text-green-600">4</p>
+        </div>
+    </div>
+
+    <h2 class="text-2xl font-semibold mb-4 text-gray-800">Welcome Dashboard</h2>
+
+
+</div>
+    </main>
+
+</body>
+</html>

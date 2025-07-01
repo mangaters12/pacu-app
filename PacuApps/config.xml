@@ -1,0 +1,24 @@
+<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Pacu Apps</name>
+    <description>PACU APPS</description>
+    <author email="pacuapps@pacu.com" href="https://pacu-apps.com">
+        Pacu Apps
+    </author>
+    <content src="http://192.168.58.22:8000/home" />
+
+    <!-- Icon untuk berbagai platform -->
+    <platform name="android">
+        <icon src="www/img/logo.jpeg" density="mdpi" />
+        <icon src="www/img/logo.jpeg" density="hdpi" />
+        <icon src="www/img/logo.jpeg" density="xhdpi" />
+        <icon src="www/img/logo.jpeg" density="xxhdpi" />
+        <icon src="www/img/logo.jpeg" density="xxxhdpi" />
+    </platform>
+
+    <platform name="ios">
+        <icon src="www/img/logo.jpeg" />
+    </platform>
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+</widget>

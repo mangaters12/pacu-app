@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laravel WebView</title>
+    <script src="cordova.js"></script>
+</head>
+<body>
+<h1>Loading Laravel...</h1>
+<script>
+    document.addEventListener('deviceready', function() {
+        // Buka Laravel di WebView
+        var ref = cordova.InAppBrowser.open('http://192.168.1.100:8000', '_self');
+    });
+</script>
+</body>
+</html>
